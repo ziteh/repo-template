@@ -3,6 +3,7 @@
 
 version: "0.2"
 language: "en"
+caseSensitive: false
 allowCompoundWords: false # true to allow "stringlength"
 useGitignore: true
 ignorePaths:
