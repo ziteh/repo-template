@@ -1,3 +1,18 @@
+# Node.js
+node_modules/
+logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+build/
+dist/
+
+# Environment
+.env
+
 # Other
 .DS_Store
 Thumbs.db
