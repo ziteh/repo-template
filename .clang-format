@@ -8,15 +8,18 @@ BasedOnStyle: LLVM
 Language: Cpp
 TabWidth: 4
 IndentWidth: 4
+PPIndentWidth: -1 # Follow IndentWidth
+ContinuationIndentWidth: 4
+BracedInitializerIndentWidth: 4
 AccessModifierOffset: -4
-ColumnLimit: 0
+ColumnLimit: 0 # Manual
 UseTab: Never
 SortIncludes: Never
-LineEnding: DeriveLF
-AlignAfterOpenBracket: BlockIndent
+AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Left
 AlignConsecutiveMacros:
   Enabled: true
+  AcrossEmptyLines: false
   AcrossComments: true
 AlignEscapedNewlines: Left
 AlignOperands: AlignAfterOperator
@@ -38,7 +41,7 @@ BraceWrapping:
   AfterObjCDeclaration: false
   AfterStruct: false
   AfterUnion: false
-  AfterExternBlock: true  # Make `IndentExternBlock: NoIndent` work. https://github.com/llvm/llvm-project/issues/49804
+  AfterExternBlock: false
   BeforeCatch: false
   BeforeElse: false
   BeforeLambdaBody: false
@@ -48,10 +51,11 @@ BraceWrapping:
   SplitEmptyRecord: true
   SplitEmptyNamespace: true
 BreakBeforeBinaryOperators: NonAssignment
-CommentPragmas: ''
-IncludeIsMainRegex: ''
+CommentPragmas: ""
+IncludeIsMainRegex: ""
 IndentExternBlock: NoIndent
 IndentPPDirectives: BeforeHash
 InsertNewlineAtEOF: true
 InsertTrailingCommas: Wrapped
 KeepEmptyLinesAtTheStartOfBlocks: false
+LineEnding: DeriveLF
